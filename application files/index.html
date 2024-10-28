@@ -2,88 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <script src="../assets/js/index.js"></script>
+    <script defer src="../assets/js/index.js"></script>
     <title>NLSA SANB Information Sheet</title>
 </head>
 <body>
     <div class="container">
-        <form action="/" method="post"></form>
+        <form id="form" action="/">
+           
             <div class="input-control">
-                <label for="input-author-firstname">Author First Name</label>
-                <input type="text" name="author-firstname" id="input-author-firstname"/>
+                <label for="input-firstname">First Name</label>
+                <input id="input-firstname" type="text" name="firstname">
+                <div class="error"></div>
             </div>
 
             <div class="input-control">
-                <label for="input-author-lastname">Author Last Name</label>
-                <input type="text" name="author-lastname" id="input-author-lastname" />
-            </div>
-
-            <div class="input-control">
-                <label for="input-author-pseudonym">Author Pseudonym</label>
-                <input type="text" name="author-pseudonym" id="input-author-pseudonym" />
+                <label for="input-lastname">Last Name</label>
+                <input id="input-lastname" type="text" name="lastname">
+                <div class="error"></div>
             </div>
             
             <div class="input-control">
                 <label for="input-email">Email</label>
-                <input type="text" name="publisher-email" id="input-email"/>
-            </div>
-        
-            <div class="input-control">
-                <label for="input-editor-firstname">Editor Firstname</label>
-                <input type="text" name="editor-firstname" id="input-editor-firstname" />
-            </div>
-            
-            <div class="input-control">
-                <label for="input-editor-lastname">Editor Lastname</label>
-                <input type="text" name="editor-lastname" id="input-editor-lastname" />
+                <input id="input-email" type="text" name="email-address">
+                <div class="error"></div>
             </div>
 
-            <div class="input-control">
-                <label for="input-title-of-publication">Title of publication</label>
-                <input type="text" name="title_of_publication" id="input-title-of-publication" />
-            </div>
-            
-            <div class="input-control">
-                <label for="input-edition">Edition</label>
-                <input type="text" name="edition" id="input-edition" />
-            </div>
-
-            <div class="input-control">
-                <label for="input-impression">Impression</label>
-                <input type="text" name="impression" id="input-impression" />
-            </div>
-            
-            <div class="input-control">
-                <label for="input-book-isbn">E-book ISBN</label>
-                <input type="text" name="isbn" id="input-book-isbn" />
-            </div>
-            
-            <div class="input-control">
-                <label for="input-set-isbn"></label>
-                <input type="text" name="set-isbn" id="input-set-isbn" />
-            </div>
-            
-            <div class="input-control">
-                <label for="input-publisher-firstname">Publisher First Name</label>
-                <input type="text" name="publisher-firstname" id="input-publisher-firstname" />
-            </div>
-            
             <div class="input-control">
                 <label for="input-password">Password</label>
-                <input type="password" name="publisher-password" id="input-password" />
+                <input id="input-password" type="password" name="publisher-password">
+                <div class="error"></div>
             </div>
 
             <div class="input-control">
                 <label for="input-password2">Confirm password</label>
-                <input type="password" name="publisher-password2" id="input-password2" />
+                <input id="input-password2" type="password" name="publisher-password2">
+                <div class="error"></div>
             </div>
 
-            <button type="submit">Submit</button>
+            <button type="submit">Send</button>
 
         </form>    
     </div>
